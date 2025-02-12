@@ -3,7 +3,7 @@
 /{
     chosen {
         zmk,kscan = &kscan;
-    }
+    };
 
     kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
