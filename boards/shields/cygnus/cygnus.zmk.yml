@@ -1,0 +1,13 @@
+file_format: "1"
+id: cygnus
+name: "Cygnus XIAO BLE"
+type: shield
+requires:
+  - xiao_ble
+features:
+  - keys
+  - handwired
+siblings:
+  - cygnus_left
+  - cygnus_right
+
