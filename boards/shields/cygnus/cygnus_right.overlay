@@ -1,6 +1,6 @@
 #include "cygnus.dtsi" 
 
-{
+\{
     chosen {
         zmk,kscan = &kscan;
     }
