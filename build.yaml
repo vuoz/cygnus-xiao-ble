@@ -8,5 +8,5 @@ include:
   - board: seeeduino_xiao_ble
     shield: cygnus_right
 
-  - board: seeeduino_xiao
+  - board: seeeduino_xiao_ble
     shield: settings_reset
