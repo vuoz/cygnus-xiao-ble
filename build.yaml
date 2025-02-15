@@ -11,13 +11,13 @@ include:
 
 
   # dongle
-  - board: seeeduino_xiao
+  - board: seeeduino_xiao_ble
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
     shield: cygnus_dongle 
 
   # reset
-  - board: seeeduino_xiao
+  - board: seeeduino_xiao_ble
     shield: settings_reset
 
 
