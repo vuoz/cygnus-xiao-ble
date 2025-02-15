@@ -5,6 +5,10 @@ This repo contains the zmk shields required to use a cygnus with a Seed XIAO BLE
 The original cygnus repo can be found [here](https://github.com/juhakaup/keyboards/tree/main/Cygnus%20v1.0)   
 All credit goes to the original creator [juhakaup](https://github.com/juhakaup). This is just a zmk config template that adds support for the Seeed XIAO BLE.
 
+### Notes on the dongle
+- A dongle is great if you keyboard is stationary. It decreases the latency and increases the battery life of you halves.
+- You will need another Seed XIAO BLE to use the dongle. The firmware for the dongle will be included in the output of the github actions build.
+
 ## Motivation
 - It's quite simple: The Seeed XIAO BLE is significantly cheaper than a nice! nano v2.
 
@@ -62,6 +66,10 @@ You should be able to repeat this process for the right side of the keyboad. The
 This is the final assembled version
 ![assembled](./imgs/assembled_cygnus.png)  
 
+
+
+
+
 ### Modifying the firmware
 1. Fork the repo
 2. Clone the repo to your computer
@@ -74,13 +82,16 @@ This is the final assembled version
 1. Connect the keyboard to your computer.
 2. Press the reset button on your keyboard twice. This will put the keyboard into bootloader mode.
 3. Drag you firmware file onto the keyboard. It should be recognized as a USB drive.
-4. Done
+4. For the dongle: Also flash the dongle's firmware. Then connect the dongle to you computer via usbc. 
+5. Now switch on you both keyboard halves. The dongle should find the peripherals and be able to connect to them.
 
 
 ### Connecting to the computer
-1. Flip the power switch on the the back of the keyboard case.
-2. Go to your computer's bluetooth setttings.
-3. Now you should be able to see a keyboard with the name "Cygnus" available.
+1. Connect the dongle to your computer ( either via usbc or by adding a battery to the dongle and then turning it on)
+2. Flip the power switch on the the back of the keyboard cases.
+3. Wait for the dongle to find the peripherals. This should take a few seconds.
+4. Go to your computer's bluetooth setttings.
+5. Now you should be able to see a keyboard with the name "Cygnus" available.
 4. Follow the instructions to pair the keyboard with your computer.
 ## Credits
 - keymap, overlay and dtsi files are inspired by splitkb's corne keyboard [here](https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/splitkb_aurora_corne). Thanks to their work, I was able to port this keyboard to the Seeed XIAO BLE quite easily.
