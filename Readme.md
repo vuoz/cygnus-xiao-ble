@@ -62,6 +62,10 @@ You should be able to repeat this process for the right side of the keyboad. The
 This is the final assembled version
 ![assembled](./imgs/assembled_cygnus.png)  
 
+
+### Dongle
+If you want to use a dongle with this keyboard please take a look at this branch: [dongle branch](https://github.com/vuoz/cygnus-xiao-ble/tree/dongle)
+
 ### Modifying the firmware
 1. Fork the repo
 2. Clone the repo to your computer
