@@ -1,15 +1,15 @@
-### Cygnus ZMK config template for the Seed XIAO BLE microcontroller
+### Cygnus ZMK config template for the Seeed Studio XIAO nRF52840 (used to be named as XIAO BLE) microcontroller
 
 
-This repo contains the zmk shields required to use a cygnus with a Seed XIAO BLE microcontroller.    
+This repo contains the zmk shields required to use a cygnus with a Seeed Studio XIAO BLE microcontroller.    
 The original cygnus repo can be found [here](https://github.com/juhakaup/keyboards/tree/main/Cygnus%20v1.0)   
 All credit goes to the original creator [juhakaup](https://github.com/juhakaup). This is just a zmk config template that adds support for the Seeed XIAO BLE.
 
 ## Motivation
-- It's quite simple: The Seeed XIAO BLE is significantly cheaper than a nice! nano v2.
+- It's quite simple: The [Seeed XIAO BLE](https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html) is significantly cheaper than a nice! nano v2.
 
 ### Wiring
-This is the pin out for the xiao ble
+This is the pin out for the XIAO BLE
 ![wiring](https://files.seeedstudio.com/wiki/XIAO-BLE/pinout2.png)
 
 This config uses pin 0-3 for the rows and pin 4-8 for the columns.      
@@ -41,8 +41,6 @@ Solder your battery's - wire to the BAT- pin and your battery's + to a switch, w
 
 
 ### Images of wiring 
-(sorry for the poor image quality)
-
 
 This is the wiring on the back of the keyboard. For a more detailed guide please look at [juhakaup's](https://github.com/juhakaup/keyboards/tree/main/Cygnus%20v1.0) build guide.
 ![wiring](./imgs/wiring.jpg)
@@ -54,10 +52,10 @@ The same goes for the columns. As seen in the image above, the purple wire is co
 
 
 Admittedly the wiring is a bit messy. But it works decently well.
+
 Additionally as documented in the original build guide, you can use printed brackets to secure the controller in place. Due to a broken printer I have not been able to print them, but the assembly should be quite straight forward.
 ![controller_wiring](./imgs/controller.jpg)
-
-You should be able to repeat this process for the right side of the keyboad. The wiring is the same. Row 1 should still be connected to D0 and so on.
+You should be able to repeat this process for the right side of the keyboard. The wiring is the same. Row 1 should still be connected to D0 and so on.
 
 This is the final assembled version
 ![assembled](./imgs/final.jpg)  
@@ -77,13 +75,13 @@ If you want to use a dongle with this keyboard please take a look at this branch
 
 1. Connect the keyboard to your computer.
 2. Press the reset button on your keyboard twice. This will put the keyboard into bootloader mode.
-3. Drag you firmware file onto the keyboard. It should be recognized as a USB drive.
+3. Drag your firmware file onto the keyboard. It should be recognized as a USB drive.
 4. Done
 
 
 ### Connecting to the computer
-1. Flip the power switch on the the back of the keyboard case.
-2. Go to your computer's bluetooth setttings.
+1. Flip the power switch on the back of the keyboard case.
+2. Go to your computer's Bluetooth settings.
 3. Now you should be able to see a keyboard with the name "Cygnus" available.
 4. Follow the instructions to pair the keyboard with your computer.
 ## Credits
