@@ -45,7 +45,7 @@ Solder your battery's - wire to the BAT- pin and your battery's + to a switch, w
 
 
 This is the wiring on the back of the keyboard. For a more detailed guide please look at [juhakaup's](https://github.com/juhakaup/keyboards/tree/main/Cygnus%20v1.0) build guide.
-![wiring](./imgs/wiring.png)
+![wiring](./imgs/wiring.jpg)
 
 
 As you can see in the picture. The black wire is connected to the first pin. As depicted in the image above, the black wire is connected to the first row of the keyboard. Following the principle all the following rows are connected to the controller in that order.   
@@ -55,12 +55,12 @@ The same goes for the columns. As seen in the image above, the purple wire is co
 
 Admittedly the wiring is a bit messy. But it works decently well.
 Additionally as documented in the original build guide, you can use printed brackets to secure the controller in place. Due to a broken printer I have not been able to print them, but the assembly should be quite straight forward.
-![controller_wiring](./imgs/controller.png)
+![controller_wiring](./imgs/controller.jpg)
 
 You should be able to repeat this process for the right side of the keyboad. The wiring is the same. Row 1 should still be connected to D0 and so on.
 
 This is the final assembled version
-![assembled](./imgs/assembled_cygnus.png)  
+![assembled](./imgs/final.jpg)  
 
 
 ### Dongle
