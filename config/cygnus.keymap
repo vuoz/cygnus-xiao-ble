@@ -69,13 +69,13 @@
                 raise_layer {
                     // -----------------------------------------------------------------------------------------
                     // |  TAB |  !  |  "  |  §  |  $  |  %  |   |  &  |  /  |  (  |  )  |  =  | BKSP |
-                    // | CTRL |     |  '  |  €  |     |     |   |  \  |  ` |  {  |  }  |  #  |  <   |
-                    // | SHFT |     |     |     |     |     |   |  ?  |  +  |  [  |  ]  | "|" |  >   |
+                    // | CTRL |     |  '  |  €  |  ^  |  @  |   |  \  |  ` |  {  |  }  |  #  |  <   |
+                    // | SHFT |     |     |     |  <  |  >  |   |  ?  |  +  |  [  |  ]  | "|" |  >   |
                     //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
                             &kp  TAB  &kp DE_EXCL &kp DE_DQT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp DE_FSLH  &kp DE_LPAR &kp DE_RPAR &kp DE_EQUAL &kp BSPC
-                            &kp LCTRL &kp RA(N)   &kp PIPE &kp DE_EURO   &kp RA(CARET)   &trans      &kp RA(LS(N7)) &kp DE_GRAVE &kp RA(N8)  &kp RA(N9)  &kp BSLH &kp GRAVE
-                            &kp LSHFT &trans   &trans &trans   &trans   &studio_unlock     &kp DE_QMARK &kp DE_PLUS  &kp RA(N5)  &kp RA(N6) &kp RA(N7) &kp RA(L)
+                            &kp LCTRL &kp RA(N)   &kp PIPE &kp DE_EURO   &kp RA(CARET)   &kp RA(L) &kp RA(LS(N7)) &kp DE_GRAVE &kp RA(N8)  &kp RA(N9)  &kp BSLH &trans
+                            &kp LSHFT &trans   &trans &trans   &kp GRAVE  &kp LS(GRAVE) &kp DE_QMARK &kp DE_PLUS  &kp RA(N5)  &kp RA(N6) &kp RA(N7) &studio_unlock
                                                         &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
