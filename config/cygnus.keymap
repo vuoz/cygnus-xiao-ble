@@ -25,7 +25,7 @@
             };
             ht_timeless: ht_timeless {
                 compatible = "zmk,behavior-hold-tap";
-                flavor = "balanced";
+                flavor = "hold-preferred";
                 tapping-term-ms = <280>;
                 #binding-cells = <2>;
                 quick-tap-ms = <175>;
