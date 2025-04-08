@@ -31,7 +31,7 @@
                 require-prior-idle-ms = <150>;
                 bindings = <&kp>, <&mo>;
                 hold-trigger-on-release;
-            }
+            };
         };
         combos {
             compatible = "zmk,combos";
