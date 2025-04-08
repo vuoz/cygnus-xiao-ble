@@ -24,6 +24,7 @@
                 bindings = <&kp>, <&kp>;  
             };
             ht_timeless: ht_timeless {
+                compatible = "zmk,behavior-hold-tap";
                 flavor = "balanced";
                 tapping-term-ms = <280>;
                 #binding-cells = <2>;
