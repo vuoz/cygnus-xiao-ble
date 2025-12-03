@@ -1,5 +1,16 @@
 #include "cygnus.dtsi" 
 
+
+/{
+    esb_split {
+        compatible = "zmk,esb-split";
+        // These are arbitrary default addresses. In end user products
+        // different addresses should be used for each set of devices.
+        base-addr-0 = <0xA2 0xE3 0x0E 0x4E>;
+        base-addr-1 = <0x52 0xF5 0x83 0xD4>;
+        addr-prefix = <0x36 0xC3 0xDC 0x5B 0xD8 0x10 0x0D 0x7D>;
+    };
+};
 /{
     chosen {
         zmk,kscan = &kscan;
