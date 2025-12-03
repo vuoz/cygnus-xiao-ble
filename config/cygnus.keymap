@@ -1,5 +1,4 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
+/* Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
@@ -71,7 +70,7 @@
                         bindings = <
                             &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
                             &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &out OUT_TOG
-                            &kp LSHFT  &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV       &kp C_PP       &kp C_NEXT         &kp DE_O_UMLAUT   &kp DE_A_UMLAUT   &kp DE_U_UMLAUT &kp DE_SHARP_S    &trans &kp C_AL_LOCK
+                            &kp LSHFT  &kp  RA(LEFT )&kp RA(RIGHT)&kp C_PREV       &kp C_PP       &kp C_NEXT         &kp DE_O_UMLAUT   &kp DE_A_UMLAUT   &kp DE_U_UMLAUT &kp DE_SHARP_S    &trans &kp C_AL_LOCK
                                                             &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
@@ -85,7 +84,7 @@
                         bindings = <
                             &kp  TAB  &kp DE_EXCL &kp DE_DQT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp DE_FSLH  &kp DE_LPAR &kp DE_RPAR &kp DE_EQUAL &kp BSPC
                             &kp LCTRL &kp RA(N)   &kp PIPE &kp DE_EURO   &kp RA(CARET)   &kp RA(L) &kp RA(LS(N7)) &kp DE_GRAVE &kp RA(N8)  &kp RA(N9)  &kp BSLH &trans
-                            &kp LSHFT &trans   &trans &kp GRAVE &kp LS(GRAVE)  &kp RA(N7) &kp DE_QMARK &kp DE_PLUS  &kp RA(N5)  &kp RA(N6) &kp RA(N7) &studio_unlock
+                            &kp LSHFT &kp C_VOL_DN &kp C_VOL_UP &kp GRAVE &kp LS(GRAVE)  &kp RA(N7) &kp DE_QMARK &kp DE_PLUS  &kp RA(N5)  &kp RA(N6) &kp RA(N7) &studio_unlock
                                                         &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
