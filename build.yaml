@@ -2,24 +2,26 @@
 ---
 include:
   # left
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble 
     shield: cygnus_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
   # right
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble 
     shield: cygnus_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
 
   # dongle
-  - board: seeeduino_xiao_ble
+  - board: zongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
     shield: cygnus_dongle 
 
   # reset
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble 
     shield: settings_reset
 
+  - board: zongle 
+    shield: settings_reset
 

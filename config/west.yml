@@ -11,20 +11,24 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: e34793e8c7193bc868b95ec38d78f67956f759cb
+      revision: main   
       import: app/west.yml
     - name: zmk-feature-split-esb
       remote: badjeff
       revision: main  
     - name: sdk-nrf
-      remote: nrfconnect
-      revision: v2.6.4 # zephyr v3.5.99
+      remote: badjeff
+      revision: v3.1-branch+zmk-fixes 
       path: nrf
     - name: nrfxlib
       remote: nrfconnect
-      revision: v2.6.4
+      revision: v3.1-branch
       repo-path: sdk-nrfxlib
       path: nrfxlib
+    - name: zmk-component-zongle
+      remote: vuoz
+      revision: main
+
   self:
     path: config
 
